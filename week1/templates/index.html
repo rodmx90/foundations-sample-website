@@ -1,22 +1,20 @@
-<!-- This is a basic html page which Flask can serve. 
-It does not use the power of Flask, but is easier to read than some of the other files. 
--->
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html>
+{% block content %}
+    <img src="https://code.berlin/content/uploads/3fab9ffd-1800x1200.jpg" alt="CODE students">        
+    <h2> The story of CODE </h2>    
+    <p> When our chancellor Thomas Bachem – self-taught software engineer and designer – was looking for study programs to promote his endeavors as an internet entrepreneur, he was disappointed to see that the academic landscape mostly focused on the never-changing basic principles of Computer Science, instead of the exciting new possibilities of the internet and its opportunities.
+    </p>
+    <p>
+        He decided to study Economics at a private business school in Cologne, which is where he experienced firsthand the radical drive to apply academic theories to the real world and a personal, supportive learning environment. Out of both his fruitless search for a truly applied software-engineering program and his revolutionary experience at the private university, the idea for CODE was born: CODE would be to Computer Science what business schools are to classic Economics programs.
+    </p>
+    <p>
+        One decade later, Thomas had already founded several successful internet startups. As an entrepreneur and employer, he discovered time and time again that good software engineers, designers and product managers – the key drivers for ambitious digital companies – are a rare resource in Europe and Germany in particular because classical university programs rarely qualify young men and women for the challenges of the new economy.
 
-<!-- learn more about what belongs in head and how it is used here 
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
-<head>
-	<title>A Static Page</title>
-	<meta charset="utf-8"/>
-    <link rel="stylesheet" href="../static/styles.css">
-</head> 
-<body>
-    <h1 class="banner">Hello, Static HTML!</h1>
-    <p>This page is static HTML, or hard-coded. It is similar to what we did in class the first week on glitch. </p>
-    <p>So far, we are not using the power of Flask, but you will in this assignment!</p>
+    </p>
+    <br>
+    <h3>CODE is an international and inclusive learning environment that attracts digital pioneers from all over the world and empowers them to live up to their full potential. As a community, we stimulate transformative innovation by fostering creativity, critical thinking, collaboration, and curiosity-driven learning.
+    </h3>
 
-    <p> To see a page which starts to use Flask to <em>generate</em> dynamic code, <a href="/first-page">click here</a>.</p>
-</body>
-</html>
+
+{% endblock %}
