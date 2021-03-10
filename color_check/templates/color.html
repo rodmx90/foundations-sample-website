@@ -1,7 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <p> Edit this file to show the name of the color and to render a square of that color itself! 
+    <!-- <p> Edit this file to show the name of the color and to render a square of that color itself!        
+    </p> -->
+    
+    
+    {% if color_hex_code is not none %}
+    <p> 
+        Congratulations! <span style="height: 10px;  width: 10px; position: relative; display: inline-block; border-radius: 10px; border: 1px solid #ccc; top: 1px; background-color: {{ color_hex_code }}"></span>
+        {{ user_submitted_string }} is a nice color   
+    </p>    
+    {% else %}
+    <p> 
+        Color name is not valid   
     </p>
+    {% endif %}
+    
 
 {% endblock %}
